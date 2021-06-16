@@ -1,0 +1,36 @@
+.home {
+    @include x-padding;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+   
+    .search-bar {
+        margin-top: 2rem;
+        padding: .2rem;
+        background-color: white;
+        border-radius: 2rem;
+        text-align: center;
+        width: 50%;
+
+        input {
+            margin: .3rem;
+            border: none;
+            padding: .5rem;
+            width: 80%;
+        }
+
+        img {
+           width: 1rem;
+           height: auto;
+           padding-right: .5rem;
+           opacity: 0.5;
+
+           &:hover {
+               cursor: pointer;
+           }
+        }
+    }
+}

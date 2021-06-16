@@ -1,0 +1,29 @@
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
+
+@mixin x-padding($scale: 1) {
+    padding-left: 1rem * $scale;
+    padding-right: 1rem * $scale;
+
+    @media (min-width: $breakpoint-md) {
+        padding-left: 3rem * $scale;
+        padding-right: 3rem * $scale;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        padding-left: 3rem * $scale;
+        padding-right: 3rem * $scale;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        padding-left: 8rem * $scale;
+        padding-right: 8rem * $scale;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+        padding-left: 8rem * $scale;
+        padding-right: 8rem * $scale;
+    }
+}
