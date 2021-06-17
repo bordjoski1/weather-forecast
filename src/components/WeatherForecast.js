@@ -10,6 +10,7 @@ function WeatherForecast(props) {
                 <div className="forecast">
                     <div className="date">
                         {WeatherUtility.getWeatherIcon(props.weather)}
+                        <p>{props.weather}</p>
                         <div>
                             <h2>Today</h2>
                             <p>{DateUtility.getDate()}</p>
