@@ -91,7 +91,7 @@ function Home () {
                 localHistory.map((el,index) => {
                     return <ul key={index}>
                                 <li>
-                                    <a onClick={() => getForecast(el, index)}>{el}</a> <span style={{color:"gray"}} onClick={() => deleteFromHistory(index)}>Izbrisi</span>
+                                    <a onClick={() => getForecast(el, index)}>{el}</a> <span style={{color:"gray"}} onClick={() => deleteFromHistory(index)}>Ukloni</span>
                                 </li>
                             </ul>
                     

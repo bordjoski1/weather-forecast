@@ -53,6 +53,7 @@ body {
   background-color: white;
   text-align: center;
   width: 50%;
+  position: relative;
 }
 
 .home .search-bar input {
@@ -79,9 +80,13 @@ body {
 
 .home .searchHistory {
   background-color: white;
-  width: 50.5%;
-  height: 5rem;
-  overflow-y: scroll;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  top: 7rem;
+  right: center;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
 }
 
 .home .searchHistory ul {
@@ -90,8 +95,24 @@ body {
   padding-top: .5rem;
 }
 
+.home .searchHistory ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
 .home .searchHistory ul li a {
-  color: #020244;
+  color: black;
+  cursor: pointer;
+}
+
+.home .searchHistory ul li a:active {
+  color: #490349;
+}
+
+.home .searchHistory ul li span {
+  color: gray;
+  font-weight: lighter;
+  padding-right: 2rem;
   cursor: pointer;
 }
 

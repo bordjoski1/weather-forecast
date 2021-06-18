@@ -14,6 +14,7 @@
         text-align: center;
         width: 50%;
 
+        position: relative;
         input {
             margin: .3rem;
             border: none;
@@ -38,17 +39,37 @@
     }
     .searchHistory { 
         background-color: white;
-        width: 50.5%;
-        height: 5rem;
-        overflow-y: scroll;
+        width: 40%;
+        height: auto;
+        position: absolute;
+        top: 7rem;
+        right: center;
+
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+
         ul {
             margin: 0;
             list-style: none;
             padding-top: .5rem;
         
             li {
+                display: flex;
+                justify-content: space-between;
+
                 a {
-                    color: rgb(2, 2, 68);
+                    color: black;
+                    cursor: pointer;
+
+                    &:active {
+                        color: rgb(73, 3, 73);
+                    }
+                }
+
+                span {
+                    color: gray;
+                    font-weight: lighter;
+                    padding-right: 2rem;
                     cursor: pointer;
                 }
             }
