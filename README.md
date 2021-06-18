@@ -7,7 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### First clone GitHub repository
 Open your terminal, type `git clone https://github.com/bordjoski1/weather-forecast.git`
 
-### Second install required Node packages
+
+### Second step into weather-forecast directory
+Open your terminal, type `cd weather-forecast`
+
+### Third install required Node packages
 In your terminal type `npm install`
 
 ### Finally run app
